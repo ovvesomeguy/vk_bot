@@ -72,7 +72,5 @@ def validate_password():
 
     
 def sender():
-    while True:
-        send_message_to_user(263838377)
-        time.sleep(25)
-
+    send_message_to_user(263838377)
+    log('Sended message to me')

@@ -1,12 +1,15 @@
-from flask import Flask
-from src.flib import sender
-from config.config import sleeping_time_in_secs
+from src.flib import sender , log
+from config.config import sleeping_time_in_secs , debug_level
 import time
 
-app = Flask(__name__)
 
-@app.route('/')
-def index():
+def main():
+    log('I`m started working')
+    if debug_level == 1:
+        print('| Starting |')
     while True:
         sender()
         time.sleep(sleeping_time_in_secs)
+    
+if __name__ == "__main__":
+    main()

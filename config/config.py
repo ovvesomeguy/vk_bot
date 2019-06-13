@@ -14,7 +14,11 @@ alihan_id = 506829852 # https://vk.com/b.smith82
 my_dev_id = 263838377  # https://vk.com/id263838377
 
 # time
-sleeping_time_in_secs = 60*60
+sleeping_time_in_secs = 60
+# 60*60
+
+# settings
+debug_level = 1
 
 groups = [
     whore_id,
